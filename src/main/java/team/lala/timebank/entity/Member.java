@@ -59,8 +59,7 @@ public class Member {
 	@JoinColumn(name = "CITY")
 	private Area area;
 
-	@OneToOne(mappedBy = "member", cascade = CascadeType.ALL, fetch = FetchType.EAGER) // mappedBy:對應到Member2的實例變數
-																						// member
+	@OneToOne(mappedBy = "member", cascade = CascadeType.ALL, fetch = FetchType.EAGER) // mappedBy:對應到Member2的實例變數																						// member
 	private OrgMember orgMember;
 
 	public Long getId() {

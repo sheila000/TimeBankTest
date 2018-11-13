@@ -10,8 +10,8 @@ import javax.persistence.JoinColumn;
 import javax.persistence.OneToOne;
 import javax.persistence.Table;
 
-//@Entity 
-//@Table(name="ORG_MEMBER")
+@Entity 
+@Table(name="ORG_MEMBER")
 public class OrgMember implements Serializable{
 	
 //	@Id
@@ -33,8 +33,8 @@ public class OrgMember implements Serializable{
 	private String ceo;
 	
 	@Id
-//	@OneToOne
-//	@JoinColumn(name="id")
+	@OneToOne
+	@JoinColumn(name="id")
 	private Member member;
 
 
